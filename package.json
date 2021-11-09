@@ -1,0 +1,39 @@
+{
+  "name": "@magenable/purchase-partner-url",
+  "description": "An extension for Magento PWA Studio that allow replace Add To Cart button with partner links in any product",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magenable/purchase-from-partners-pwa"
+  },
+  "bugs": {
+    "url": "https://github.com/magenable/purchase-from-partners-pwa/issues"
+  },
+  "homepage": "https://github.com/magenable/purchase-from-partners-pwa",
+  "keywords": [
+    "purchase partner url",
+    "pwa-studio",
+    "pwastudio",
+    "pwa",
+    "magento",
+    "magento2"
+  ],
+  "main": "src/targets/intercept.js",
+  "dependencies": {
+    "react-ga": "^3.3.0"
+  },
+  "peerDependencies": {
+    "@apollo/client": "^3.1.2",
+    "@magento/peregrine": "~11.0.0",
+    "@magento/pwa-buildpack": "^10.0.0",
+    "@magento/venia-ui": "^8.0.0",
+    "react": "~17.0.1",
+    "react-dom": "~17.0.1"
+  },
+  "pwa-studio": {
+    "targets": {
+      "intercept": "src/targets/intercept.js"
+    }
+  }
+}

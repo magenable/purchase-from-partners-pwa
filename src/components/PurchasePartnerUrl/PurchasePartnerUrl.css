@@ -1,0 +1,42 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.container button {
+    margin-top: 10px;
+}
+.container > button:first-child {
+    margin-top: 0;
+}
+.container.galleryItem button {
+    margin-left: -0.5rem;
+    min-height: 2rem;
+    padding: 0 0.5rem;
+    align-self: center;
+}
+.container button .icon {
+    display: none;
+}
+.linksWrapper {
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.linksWrapper.hidden {
+    display: none;
+}
+@media (max-width: 480px) {
+    .container.galleryItem > button {
+        min-width: 6.125rem;
+    }
+    .container.galleryItem > button .text {
+        display: none;
+    }
+    .container.galleryItem > button .icon {
+        display: unset;
+    }
+}
