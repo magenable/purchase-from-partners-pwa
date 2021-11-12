@@ -37,7 +37,7 @@ const PurchasePartnerUrl = props => {
     }, [configuration]);
 
     if (loading) {
-        return <Button priority="high" type="button">Loading...</Button>;
+        return <div style={{ alignSelf: 'center' }}>Loading...</div>;
     }
     if (error) {
         return props.children;

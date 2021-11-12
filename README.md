@@ -1,13 +1,13 @@
 # Purchase From Partner
 
-**Purchase From Partner** is a Magento pwa-studio extension that allows you to replace standard `Add to Cart` button with links to external websites where visitors may purchase the products. Think about Amazon affiliate store, cases when a brand has products available exlusive to retail partners. The extension may send events to Google analytics when clicking on the links for tracking/reporting.<br>
+**Purchase From Partner** is a Magento PWA Studio extension that allows you to replace standard `Add to Cart` button with links to external websites where visitors may purchase the products. Think about Amazon affiliate store, cases when a brand has products available exlusive to retail partners. The extension may send events to Google analytics when clicking on the links for tracking/reporting.<br>
 There may be one or more partner URL per product. The URLs are defined on product level, so some of your product may have normal Add to cart and some partner links.
 
 ## Installation
 
-#### Prerequisite: In Magento2 instance should be installed next module: https://packagist.org/packages/magenable/purchase-partner-url 
+**Prerequisite:** In Magento 2 instance should be installed next module: https://packagist.org/packages/magenable/purchase-partner-url 
 
-1. Adding dependency
+1. Add dependency to PWA Studio project
 
 ```
 yarn add @magenable/purchase-partner-url
@@ -23,6 +23,12 @@ purchasePartnerUrl(targetables);
 ```
 
 3. Re-build your PWA project
+
+## Upgrade
+
+```
+yarn upgrade @magenable/purchase-partner-url
+```
 
 ## Configuration
 

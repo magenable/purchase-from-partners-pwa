@@ -1,8 +1,7 @@
 .container {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+    display: grid;
+    align-items: center;
 }
 .container button {
     margin-top: 10px;
@@ -10,24 +9,33 @@
 .container > button:first-child {
     margin-top: 0;
 }
-.container.galleryItem button {
-    margin-left: -0.5rem;
-    min-height: 2rem;
-    padding: 0 0.5rem;
-    align-self: center;
-}
 .container button .icon {
     display: none;
 }
 .linksWrapper {
     position: absolute;
     top: 100%;
-    display: flex;
-    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    min-width: 100%;
     z-index: 1;
 }
 .linksWrapper.hidden {
     display: none;
+}
+
+.container.galleryItem button {
+    min-height: 2rem;
+    padding: 0 0.5rem;
+}
+.container.galleryItem > button,
+.container.galleryItem .linksWrapper
+{
+    margin-left: -0.5rem;
+}
+.container.galleryItem .linksWrapper > button:first-child {
+    margin-top: 4px;
 }
 @media (max-width: 480px) {
     .container.galleryItem > button {
