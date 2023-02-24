@@ -5,7 +5,7 @@ There may be one or more partner URL per product. The URLs are defined on produc
 
 ## Installation
 
-**Prerequisite:** In Magento 2 instance should be installed next module: https://packagist.org/packages/magenable/purchase-partner-url 
+**Prerequisite:** In Magento 2 instance should be installed next module: https://packagist.org/packages/magenable/module-purchase-partner-url 
 
 1. Add dependency to PWA Studio project
 
@@ -36,7 +36,7 @@ You can specify partner links for any products, even for products that are not a
 
 ![purchase-partner-url-](https://user-images.githubusercontent.com/34573954/140858406-b484715f-b941-4bae-8ac2-0f258524564c.png)
 
-For more information about configuration see readme in the next module https://packagist.org/packages/magenable/purchase-partner-url.
+For more information about configuration see readme in the next module https://packagist.org/packages/magenable/module-purchase-partner-url.
 
 ## Storefront view:
 
