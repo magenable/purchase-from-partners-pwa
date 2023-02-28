@@ -72,6 +72,19 @@ module.exports = (targetables) => {
         '\t\t\t\t}\n'
     );
 
+    const pageBuilderContentTypeProducts = targetables.reactComponent(
+        '@magento/pagebuilder/lib/ContentTypes/Products/products.js'
+    );
+    pageBuilderContentTypeProducts.insertAfterSource(
+        'items {\n',
+        '\t\t\t\tpurchase_partner_urls {\n' +
+        '\t\t\t\t\tlink\n' +
+        '\t\t\t\t\tlink_title\n' +
+        '\t\t\t\t\tevent_action\n' +
+        '\t\t\t\t\tevent_category\n' +
+        '\t\t\t\t}\n'
+    );
+
     const galleryItem = targetables.reactComponent(
         '@magento/venia-ui/lib/components/Gallery/item.js'
     );
